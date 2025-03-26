@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Manager</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <h2>Smart Task Manager</h2>
+    <input type="text" id="taskInput" placeholder="Task Name">
+    <input type="date" id="deadlineInput">
+    <button onclick="addTask()">Add Task</button>
+    
+    <div class="container">
+        <div class="column todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h3>To Do</h3>
+            <div id="todo" class="task-list"></div>
+        </div>
+        <div class="column inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h3>In Progress</h3>
+            <div id="inprogress" class="task-list"></div>
+        </div>
+        <div class="column completed" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h3>Completed</h3>
+            <div id="completed" class="task-list"></div>
+        </div>
+    </div>
+
+    <script src="i.js"></script>
+</body>
+</html>

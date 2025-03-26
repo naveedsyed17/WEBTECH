@@ -1,0 +1,106 @@
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+h2 {
+    color: #FFD700;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.todo h3 {
+    background: #ff4d4d;
+    color: white;
+}
+.inprogress h3 {
+    background: #FFA500;
+    color: white;
+}
+.completed h3 {
+    background: #28a745;
+    color: white;
+}
+.container {
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 20px;
+}
+.column {
+    width: 30%; 
+    padding: 10px; 
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 250px;
+    transition: transform 0.2s;
+    color: black;
+}
+.column:hover {
+    transform: scale(1.02);
+}
+.task {
+    background: #ff7043;
+    padding: 10px; 
+    margin: 8px;
+    cursor: grab;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task button {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.edit-btn {
+    background: #4CAF50;
+    color: white;
+}
+.delete-btn {
+    background: #f44336;
+    color: white;
+}
+input, button {
+    margin: 5px; 
+    padding: 10px; 
+    border: none;
+    border-radius: 5px;
+}
+input {
+    width: 200px;
+}
+button {
+    background: #FFD700;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background: #FFC107;
+}
